@@ -2,10 +2,10 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:tugas_front_end_nicolas/model/parking_lot.dart';
-import 'package:tugas_front_end_nicolas/model/user.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
-import 'package:tugas_front_end_nicolas/factory/lot_factory.dart';
+import 'package:mobile_front_end/model/parking_lot.dart';
+import 'package:mobile_front_end/model/user.dart';
+import 'package:mobile_front_end/utils/index.dart';
+import 'package:mobile_front_end/factory/lot_factory.dart';
 
 class ParkingLotProvider with ChangeNotifier {
   List<ParkingLot> lots = lotFactory.lots;

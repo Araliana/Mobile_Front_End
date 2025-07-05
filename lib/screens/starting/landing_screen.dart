@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tugas_front_end_nicolas/components/button.dart';
-import 'package:tugas_front_end_nicolas/components/language_modal.dart';
-import 'package:tugas_front_end_nicolas/provider/language_provider.dart';
-import 'package:tugas_front_end_nicolas/screens/starting/sign_in.dart';
-import 'package:tugas_front_end_nicolas/screens/starting/sign_up.dart';
+import 'package:mobile_front_end/components/button.dart';
+import 'package:mobile_front_end/components/language_modal.dart';
+import 'package:mobile_front_end/provider/language_provider.dart';
+import 'package:mobile_front_end/screens/starting/sign_in.dart';
+import 'package:mobile_front_end/screens/starting/sign_up.dart';
 import 'dart:math' as math;
 
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/utils/index.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});

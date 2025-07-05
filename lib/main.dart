@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tugas_front_end_nicolas/provider/language_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/activity_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/otp_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/parking_lot_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/history_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/user_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/voucher_provider.dart';
-import 'package:tugas_front_end_nicolas/screens/main_layout.dart';
-import 'package:tugas_front_end_nicolas/screens/starting/splash_screen.dart';
-import 'package:tugas_front_end_nicolas/screens/starting/stepper.dart';
+import 'package:mobile_front_end/provider/language_provider.dart';
+import 'package:mobile_front_end/provider/activity_provider.dart';
+import 'package:mobile_front_end/provider/otp_provider.dart';
+import 'package:mobile_front_end/provider/parking_lot_provider.dart';
+import 'package:mobile_front_end/provider/history_provider.dart';
+import 'package:mobile_front_end/provider/user_provider.dart';
+import 'package:mobile_front_end/provider/voucher_provider.dart';
+import 'package:mobile_front_end/screens/main_layout.dart';
+import 'package:mobile_front_end/screens/starting/splash_screen.dart';
+import 'package:mobile_front_end/screens/starting/stepper.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

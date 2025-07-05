@@ -1,5 +1,5 @@
-import 'package:tugas_front_end_nicolas/model/history.dart';
-import 'package:tugas_front_end_nicolas/model/parking.dart';
+import 'package:mobile_front_end/model/history.dart';
+import 'package:mobile_front_end/model/parking.dart';
 
 class Booking extends Parking {
   final DateTime bookingTime;

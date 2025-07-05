@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
-import 'package:tugas_front_end_nicolas/utils/snackbar.dart';
+import 'package:mobile_front_end/utils/index.dart';
+import 'package:mobile_front_end/utils/snackbar.dart';
 
 class ResponsiveAvatarPicker extends StatefulWidget {
   ResponsiveAvatarPicker({

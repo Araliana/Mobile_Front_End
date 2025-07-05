@@ -2,15 +2,15 @@ import 'package:barcode_widget/barcode_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:tugas_front_end_nicolas/components/button.dart';
-import 'package:tugas_front_end_nicolas/components/text_input.dart';
-import 'package:tugas_front_end_nicolas/model/user.dart';
-import 'package:tugas_front_end_nicolas/provider/activity_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/user_provider.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/home/topup/topup.dart';
-import 'package:tugas_front_end_nicolas/utils/dialog.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
-import 'package:tugas_front_end_nicolas/utils/snackbar.dart';
+import 'package:mobile_front_end/components/button.dart';
+import 'package:mobile_front_end/components/text_input.dart';
+import 'package:mobile_front_end/model/user.dart';
+import 'package:mobile_front_end/provider/activity_provider.dart';
+import 'package:mobile_front_end/provider/user_provider.dart';
+import 'package:mobile_front_end/screens/tabs/home/topup/topup.dart';
+import 'package:mobile_front_end/utils/dialog.dart';
+import 'package:mobile_front_end/utils/index.dart';
+import 'package:mobile_front_end/utils/snackbar.dart';
 
 enum MethodType { cash, transfer }
 

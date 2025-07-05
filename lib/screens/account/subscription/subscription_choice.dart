@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tugas_front_end_nicolas/model/user.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/model/user.dart';
+import 'package:mobile_front_end/utils/index.dart';
 
 class SubscriptionChoice extends StatefulWidget {
   const SubscriptionChoice(this.onChanged, {super.key});

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tugas_front_end_nicolas/model/user.dart';
-import 'package:tugas_front_end_nicolas/provider/activity_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/history_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/user_provider.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/park&book/history_detail.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/park&book/history_list.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
-import 'package:tugas_front_end_nicolas/utils/snackbar.dart';
+import 'package:mobile_front_end/model/user.dart';
+import 'package:mobile_front_end/provider/activity_provider.dart';
+import 'package:mobile_front_end/provider/history_provider.dart';
+import 'package:mobile_front_end/provider/user_provider.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_detail.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
+import 'package:mobile_front_end/utils/index.dart';
+import 'package:mobile_front_end/utils/snackbar.dart';
 
 class Activity extends StatefulWidget {
   const Activity({super.key});

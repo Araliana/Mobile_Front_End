@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:tugas_front_end_nicolas/screens/main_layout.dart';
+import 'package:mobile_front_end/screens/main_layout.dart';
 
 class SubscriptionSplash extends StatefulWidget {
   const SubscriptionSplash({super.key});

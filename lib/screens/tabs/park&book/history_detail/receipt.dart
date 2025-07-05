@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:tugas_front_end_nicolas/components/button.dart';
-import 'package:tugas_front_end_nicolas/components/detail_component.dart';
-import 'package:tugas_front_end_nicolas/components/history_card.dart';
-import 'package:tugas_front_end_nicolas/model/booking.dart';
-import 'package:tugas_front_end_nicolas/model/history.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/home/parking_lot/lot_detail.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/park&book/history_list.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
-import 'package:tugas_front_end_nicolas/model/parking.dart';
+import 'package:mobile_front_end/components/button.dart';
+import 'package:mobile_front_end/components/detail_component.dart';
+import 'package:mobile_front_end/components/history_card.dart';
+import 'package:mobile_front_end/model/booking.dart';
+import 'package:mobile_front_end/model/history.dart';
+import 'package:mobile_front_end/screens/tabs/home/parking_lot/lot_detail.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
+import 'package:mobile_front_end/utils/index.dart';
+import 'package:mobile_front_end/model/parking.dart';
 
 class Receipt extends StatefulWidget {
   final Parking history;

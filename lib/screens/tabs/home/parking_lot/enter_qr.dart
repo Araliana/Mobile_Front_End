@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:tugas_front_end_nicolas/model/parking_lot.dart';
-import 'package:tugas_front_end_nicolas/components/detail_component.dart';
-import 'package:tugas_front_end_nicolas/model/user.dart';
-import 'package:tugas_front_end_nicolas/provider/activity_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/history_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/parking_lot_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/user_provider.dart';
-import 'package:tugas_front_end_nicolas/screens/main_layout.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/park&book/history_detail.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/park&book/history_list.dart';
-import 'package:tugas_front_end_nicolas/utils/dialog.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/model/parking_lot.dart';
+import 'package:mobile_front_end/components/detail_component.dart';
+import 'package:mobile_front_end/model/user.dart';
+import 'package:mobile_front_end/provider/activity_provider.dart';
+import 'package:mobile_front_end/provider/history_provider.dart';
+import 'package:mobile_front_end/provider/parking_lot_provider.dart';
+import 'package:mobile_front_end/provider/user_provider.dart';
+import 'package:mobile_front_end/screens/main_layout.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_detail.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
+import 'package:mobile_front_end/utils/dialog.dart';
+import 'package:mobile_front_end/utils/index.dart';
 
 class EnterQR extends StatefulWidget {
   final ParkingLot mall;
