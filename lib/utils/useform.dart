@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_front_end/utils/validator.dart';
 
 class UseForm {
   bool isSubmitted = false;

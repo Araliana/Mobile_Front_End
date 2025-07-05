@@ -3,6 +3,7 @@ import 'package:mobile_front_end/screens/tabs/home.dart';
 import 'package:mobile_front_end/screens/tabs/activity.dart';
 import 'package:mobile_front_end/screens/tabs/parking&booking.dart';
 import 'package:mobile_front_end/screens/tabs/profile.dart';
+import 'package:mobile_front_end/screens/tabs/voucher.dart';
 
 enum TabValue { home, activity, parknbook, voucher, profile }
 

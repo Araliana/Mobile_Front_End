@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mobile_front_end/model/booking.dart';
 import 'package:mobile_front_end/model/parking.dart';
 import 'package:mobile_front_end/model/user.dart';
-import 'package:mobile_front_end/model/history.dart';
 import 'package:mobile_front_end/provider/history_provider.dart';
 import 'package:mobile_front_end/provider/user_provider.dart';
 import 'package:mobile_front_end/screens/tabs/park&book/history_detail/claim_qr.dart';
@@ -10,6 +9,7 @@ import 'package:mobile_front_end/screens/tabs/park&book/history_detail/payment_q
 import 'package:mobile_front_end/screens/tabs/park&book/history_detail/receipt.dart';
 import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
 import 'package:provider/provider.dart';
+import 'package:mobile_front_end/model/history.dart';
 
 class HistoryDetail extends StatefulWidget {
   final Parking history;

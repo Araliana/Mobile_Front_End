@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_front_end/screens/tabs/park&book/history_detail/voucher_dialog.dart';
-import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
 import 'package:provider/provider.dart';
 import 'package:mobile_front_end/components/button.dart';
 import 'package:mobile_front_end/components/detail_component.dart';
@@ -12,6 +11,7 @@ import 'package:mobile_front_end/model/voucher.dart';
 import 'package:mobile_front_end/provider/history_provider.dart';
 import 'package:mobile_front_end/provider/user_provider.dart';
 import 'package:mobile_front_end/screens/tabs/home/topup/topup.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
 import 'package:mobile_front_end/utils/index.dart';
 
 class PaymentDetail extends StatefulWidget {

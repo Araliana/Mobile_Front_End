@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_front_end/screens/starting/sign_up.dart';
+import 'package:mobile_front_end/utils/validator.dart';
 import 'package:provider/provider.dart';
 import 'package:mobile_front_end/components/button.dart';
 import 'package:mobile_front_end/components/text_input.dart';
