@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_front_end/screens/home/topup/topup.dart';
-import 'package:mobile_front_end/screens/park&book/history_list.dart';
+import 'package:mobile_front_end/screens/tabs/home/topup/topup.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:mobile_front_end/components/button.dart';

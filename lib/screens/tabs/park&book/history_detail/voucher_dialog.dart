@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_front_end/components/voucher_card.dart';
 import 'package:mobile_front_end/model/parking_lot.dart';
 import 'package:mobile_front_end/model/user.dart';
 import 'package:mobile_front_end/model/voucher.dart';
