@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tugas_front_end_nicolas/components/text_input.dart';
+import 'package:mobile_front_end/components/text_input.dart';
 
 enum DatePickerType { date, time, datetime }
 

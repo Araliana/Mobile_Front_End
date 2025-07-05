@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/utils/index.dart';
 
 class DetailRow extends StatelessWidget {
   final String label;

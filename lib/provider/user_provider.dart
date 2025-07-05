@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:intl_phone_field/countries.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/utils/index.dart';
 import '../model/user.dart';
 
 class UserProvider with ChangeNotifier {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/utils/index.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

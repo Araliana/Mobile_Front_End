@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:tugas_front_end_nicolas/model/user.dart';
-import 'package:tugas_front_end_nicolas/provider/user_provider.dart';
+import 'package:mobile_front_end/model/user.dart';
+import 'package:mobile_front_end/provider/user_provider.dart';
 
 class SubscriptionOngoing extends StatelessWidget {
   const SubscriptionOngoing({super.key});

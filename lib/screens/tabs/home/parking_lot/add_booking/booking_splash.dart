@@ -2,25 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:mobile_front_end/screens/main_layout.dart';
 
-class SubscriptionSplash extends StatefulWidget {
-  const SubscriptionSplash({super.key});
+class BookingSplash extends StatefulWidget {
+  const BookingSplash({super.key});
 
   @override
-  State<SubscriptionSplash> createState() => _SubscriptionSplashState();
+  State<BookingSplash> createState() => _BookingSplashState();
 }
 
-class _SubscriptionSplashState extends State<SubscriptionSplash> {
+class _BookingSplashState extends State<BookingSplash> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final isSmall = size.height < 700;
 
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacement(
+      Navigator.pushAndRemoveUntil(
         context,
         PageRouteBuilder(
           transitionDuration: const Duration(milliseconds: 700),
-          pageBuilder: (_, __, ___) => MainLayout(TabValue.profile),
+          pageBuilder: (_, __, ___) => MainLayout(TabValue.home),
           transitionsBuilder: (_, animation, __, child) {
             var tween = Tween(
               begin: const Offset(0, -1),
@@ -32,6 +32,7 @@ class _SubscriptionSplashState extends State<SubscriptionSplash> {
             );
           },
         ),
+        (Route<dynamic> route) => false,
       );
     });
 
@@ -47,28 +48,27 @@ class _SubscriptionSplashState extends State<SubscriptionSplash> {
             child: (Center(
               child: Column(
                     children: [
-                      SizedBox(height: isSmall ? 20 : 60),
+                      SizedBox(height: isSmall ? 50 : 150),
                       Image.asset(
-                        'assets/images/popup/subscription.png',
+                        'assets/images/popup/booking made.png',
                         width: isSmall ? 200 : 300,
                       ),
-                      SizedBox(height: isSmall ? 20 : 40),
+                      SizedBox(height: isSmall ? 10 : 20),
                       Text(
-                        'Payment Success',
+                        'Successful!',
                         style: TextStyle(
-                          color: Color(0xFF1F1E5B),
-                          fontSize: isSmall ? 24 : 28,
-                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF4D5DFA),
+                          fontSize: isSmall ? 28 : 32,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
-                      SizedBox(height: 10),
+                      SizedBox(height: isSmall ? 5 : 10),
                       Text(
-                        'Congrats, you have become our member',
-                        textAlign: TextAlign.center,
+                        'Successfully add booking detail',
                         style: TextStyle(
-                          color: Color(0xFF9C9CA0),
-                          fontSize: isSmall ? 16 : 20,
-                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF666262),
+                          fontSize: isSmall ? 18 : 20,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                     ],
