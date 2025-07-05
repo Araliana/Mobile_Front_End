@@ -1,4 +1,4 @@
-import 'package:mobile_front_end/model/parking_lot.dart';
+import 'package:tugas_front_end_nicolas/model/parking_lot.dart';
 
 enum VoucherFlag { flat, percent, free }
 
