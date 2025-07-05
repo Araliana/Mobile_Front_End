@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tugas_front_end_nicolas/components/voucher_card.dart';
-import 'package:tugas_front_end_nicolas/model/parking_lot.dart';
-import 'package:tugas_front_end_nicolas/model/user.dart';
-import 'package:tugas_front_end_nicolas/model/voucher.dart';
-import 'package:tugas_front_end_nicolas/provider/voucher_provider.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/components/voucher_card.dart';
+import 'package:mobile_front_end/model/parking_lot.dart';
+import 'package:mobile_front_end/model/user.dart';
+import 'package:mobile_front_end/model/voucher.dart';
+import 'package:mobile_front_end/provider/voucher_provider.dart';
+import 'package:mobile_front_end/utils/index.dart';
 
 class VoucherDialog extends StatefulWidget {
   const VoucherDialog({

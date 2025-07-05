@@ -2,20 +2,20 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tugas_front_end_nicolas/components/language_modal.dart';
-import 'package:tugas_front_end_nicolas/provider/language_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/user_provider.dart';
-import 'package:tugas_front_end_nicolas/screens/starting/landing_screen.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/account/change_password.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/account/contact_us.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/account/edit_profile.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/account/faq.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/account/rate_dialog.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/account/subscription.dart';
-import 'package:tugas_front_end_nicolas/utils/dialog.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
-import 'package:tugas_front_end_nicolas/utils/snackbar.dart';
-import 'package:tugas_front_end_nicolas/model/user.dart';
+import 'package:mobile_front_end/components/language_modal.dart';
+import 'package:mobile_front_end/provider/language_provider.dart';
+import 'package:mobile_front_end/provider/user_provider.dart';
+import 'package:mobile_front_end/screens/starting/landing_screen.dart';
+import 'package:mobile_front_end/screens/tabs/account/change_password.dart';
+import 'package:mobile_front_end/screens/tabs/account/contact_us.dart';
+import 'package:mobile_front_end/screens/tabs/account/edit_profile.dart';
+import 'package:mobile_front_end/screens/tabs/account/faq.dart';
+import 'package:mobile_front_end/screens/tabs/account/rate_dialog.dart';
+import 'package:mobile_front_end/screens/tabs/account/subscription.dart';
+import 'package:mobile_front_end/utils/dialog.dart';
+import 'package:mobile_front_end/utils/index.dart';
+import 'package:mobile_front_end/utils/snackbar.dart';
+import 'package:mobile_front_end/model/user.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
