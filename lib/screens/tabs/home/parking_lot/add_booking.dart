@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_front_end/screens/tabs/home/parking_lot/add_booking/booking_slot.dart';
+import 'package:mobile_front_end/screens/tabs/home/parking_lot/add_booking/booking_time.dart';
 import 'package:provider/provider.dart';
 import 'package:mobile_front_end/components/button.dart';
 import 'package:mobile_front_end/model/parking_lot.dart';

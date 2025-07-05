@@ -1,23 +1,116 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:mobile_front_end/screens/tabs/home/parking_lot/add_booking.dart';
-import 'package:provider/provider.dart';
 import 'package:mobile_front_end/components/button.dart';
 import 'package:mobile_front_end/model/parking_lot.dart';
+import 'package:mobile_front_end/model/user.dart';
+import 'package:mobile_front_end/provider/history_provider.dart';
 import 'package:mobile_front_end/provider/parking_lot_provider.dart';
+import 'package:mobile_front_end/provider/user_provider.dart';
+import 'package:mobile_front_end/screens/tabs/home/parking_lot/add_booking.dart';
 import 'package:mobile_front_end/screens/tabs/home/parking_lot/enter_qr.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_detail.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
+import 'package:mobile_front_end/utils/dialog.dart';
 import 'package:mobile_front_end/utils/index.dart';
+import 'package:provider/provider.dart';
 
-class SearchDetail extends StatelessWidget {
+class LotDetail extends StatelessWidget {
   final ParkingLot mall;
 
-  const SearchDetail({super.key, required this.mall});
+  const LotDetail({super.key, required this.mall});
 
   @override
   Widget build(BuildContext context) {
     final lotProvider = Provider.of<ParkingLotProvider>(context);
+    final userProvider = Provider.of<UserProvider>(context);
+    User user = userProvider.currentUser!;
+    final historyProvider = Provider.of<HistoryProvider>(context);
+    historyProvider.checkAllStatus(user, context);
     final size = MediaQuery.of(context).size;
     final isSmall = size.height < 700;
+
+    void checkParkAllowed(VoidCallback next) {
+      if (user.balance < 0) {
+        showAlertDialog(
+          context: context,
+          title: "Insufficient Balance",
+          icon: Icons.block,
+          color: Colors.redAccent,
+          content: Text(
+            "You cannot make a booking because your balance is negative. Please top up your account first.",
+            style: TextStyle(
+              fontSize: isSmall ? 14 : 16,
+              color: Colors.grey.shade700,
+              height: 1.4,
+            ),
+            textAlign: TextAlign.center,
+          ),
+        );
+        return;
+      }
+
+      final unresolvedHistory = historyProvider.getUnresolved(user);
+      if (unresolvedHistory.isNotEmpty) {
+        showAlertDialog(
+          context: context,
+          title: "Unresolved Parking",
+          icon: Icons.access_time_rounded,
+          color: Colors.deepOrangeAccent,
+          content: Text(
+            "You have unresolved parking that has been active for over 20 hours.\nPlease resolve your parking session before making a new booking.",
+            style: TextStyle(
+              fontSize: isSmall ? 14 : 16,
+              color: Colors.grey.shade700,
+              height: 1.4,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          onPressed: () {
+            final type =
+                unresolvedHistory[0].id.startsWith("BOOK")
+                    ? HistoryType.booking
+                    : HistoryType.parking;
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => HistoryDetail(unresolvedHistory[0], type),
+              ),
+            );
+          },
+        );
+        return;
+      }
+
+      final activeHistory = historyProvider.getActive(user);
+      if (activeHistory.isNotEmpty) {
+        showConfirmDialog(
+          context: context,
+          title: "Active Parking",
+          icon: Icons.directions_car_filled_rounded,
+          color: Colors.blueAccent,
+          content:
+              "You still have an active parking session. Would you like to continue with payment or proceed to your next action?",
+          continueText: "Go Pay",
+          cancelText: "Next",
+          onCancel: next,
+          onContinue: () {
+            Navigator.pop(context);
+            final type =
+                activeHistory[0].id.startsWith("BOOK")
+                    ? HistoryType.booking
+                    : HistoryType.parking;
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => HistoryDetail(activeHistory[0], type),
+              ),
+            );
+          },
+        );
+      } else {
+        next();
+      }
+    }
 
     return Scaffold(
       body: SafeArea(
@@ -46,7 +139,7 @@ class SearchDetail extends StatelessWidget {
                             size: isSmall ? 25 : 30,
                           ),
                         ),
-                        const SizedBox(width: 8),
+                        SizedBox(width: isSmall ? 0 : 8),
                         Text(
                           translate(
                             context,
@@ -373,13 +466,16 @@ class SearchDetail extends StatelessWidget {
                             Expanded(
                               child: ResponsiveButton(
                                 fontWeight: FontWeight.w600,
-                                onPressed:
+                                onPressed: () {
+                                  checkParkAllowed(
                                     () => Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                         builder: (context) => AddBooking(mall),
                                       ),
                                     ),
+                                  );
+                                },
                                 backgroundColor: Color(0xFFFFA35E),
                                 text: translate(
                                   context,
@@ -392,7 +488,8 @@ class SearchDetail extends StatelessWidget {
                             SizedBox(width: 10),
                             Expanded(
                               child: ResponsiveButton(
-                                onPressed:
+                                onPressed: () {
+                                  checkParkAllowed(
                                     () => Navigator.push(
                                       context,
                                       MaterialPageRoute(
@@ -400,6 +497,8 @@ class SearchDetail extends StatelessWidget {
                                             (context) => EnterQR(mall: mall),
                                       ),
                                     ),
+                                  );
+                                },
                                 fontWeight: FontWeight.w600,
                                 backgroundColor: Color(0xFF7573EE),
                                 text: translate(
@@ -431,11 +530,11 @@ class ExpandableRichText extends StatefulWidget {
   final BuildingType buildingType;
 
   const ExpandableRichText({
-    super.key,
+    Key? key,
     required this.openTime,
     required this.closeTime,
     required this.buildingType,
-  });
+  }) : super(key: key);
 
   @override
   State<ExpandableRichText> createState() => _ExpandableRichTextState();

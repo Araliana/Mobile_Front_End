@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_detail.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:mobile_front_end/model/parking_lot.dart';
