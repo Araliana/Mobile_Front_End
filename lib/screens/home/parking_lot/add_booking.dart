@@ -8,9 +8,7 @@ import 'package:mobile_front_end/provider/history_provider.dart';
 import 'package:mobile_front_end/provider/parking_lot_provider.dart';
 import 'package:mobile_front_end/provider/user_provider.dart';
 import 'package:mobile_front_end/screens/tabs/home/parking_lot/add_booking/booking_confirm.dart';
-import 'package:mobile_front_end/screens/tabs/home/parking_lot/add_booking/booking_slot.dart';
 import 'package:mobile_front_end/screens/tabs/home/parking_lot/add_booking/booking_splash.dart';
-import 'package:mobile_front_end/screens/tabs/home/parking_lot/add_booking/booking_time.dart';
 import 'package:mobile_front_end/utils/dialog.dart';
 import 'package:mobile_front_end/utils/index.dart';
 

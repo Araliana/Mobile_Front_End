@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_front_end/components/button.dart';
+import 'package:mobile_front_end/screens/starting/landing_screen.dart';
+import 'package:mobile_front_end/utils/index.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:tugas_mobile_front_end/components/button.dart';
-import 'package:tugas_mobile_front_end/screens/starting/landing_screen.dart';
-import 'package:tugas_mobile_front_end/utils/index.dart';
 
 class StepModel {
   final String title;
