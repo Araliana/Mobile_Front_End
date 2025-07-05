@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_front_end/screens/home/topup/topup.dart';
+import 'package:mobile_front_end/screens/park&book/history_list.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:mobile_front_end/components/button.dart';
@@ -12,8 +14,6 @@ import 'package:mobile_front_end/provider/activity_provider.dart';
 import 'package:mobile_front_end/provider/history_provider.dart';
 import 'package:mobile_front_end/provider/parking_lot_provider.dart';
 import 'package:mobile_front_end/provider/user_provider.dart';
-import 'package:mobile_front_end/screens/tabs/home/topup/topup.dart';
-import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
 import 'package:mobile_front_end/screens/tabs/park&book/history_detail/payment.dart';
 import 'package:mobile_front_end/utils/dialog.dart';
 import 'package:mobile_front_end/utils/index.dart';

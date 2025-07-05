@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tugas_front_end_nicolas/model/voucher.dart';
-import 'package:tugas_front_end_nicolas/provider/voucher_provider.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/model/voucher.dart';
+import 'package:mobile_front_end/provider/voucher_provider.dart';
+import 'package:mobile_front_end/utils/index.dart';
 
 class VoucherCard extends StatelessWidget {
   final Voucher? listVoucher;

@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:mobile_front_end/screens/home/parking_lot/add_booking.dart';
+import 'package:mobile_front_end/screens/tabs/home/parking_lot/add_booking.dart';
 import 'package:provider/provider.dart';
 import 'package:mobile_front_end/components/button.dart';
 import 'package:mobile_front_end/model/parking_lot.dart';

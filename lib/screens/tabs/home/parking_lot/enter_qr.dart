@@ -9,8 +9,6 @@ import 'package:mobile_front_end/provider/history_provider.dart';
 import 'package:mobile_front_end/provider/parking_lot_provider.dart';
 import 'package:mobile_front_end/provider/user_provider.dart';
 import 'package:mobile_front_end/screens/main_layout.dart';
-import 'package:mobile_front_end/screens/tabs/park&book/history_detail.dart';
-import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
 import 'package:mobile_front_end/utils/dialog.dart';
 import 'package:mobile_front_end/utils/index.dart';
 
