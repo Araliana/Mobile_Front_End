@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tugas_front_end_nicolas/model/history.dart';
-import 'package:tugas_front_end_nicolas/model/parking.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/park&book/history_detail.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/park&book/history_list.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/model/history.dart';
+import 'package:mobile_front_end/model/parking.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_detail.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
+import 'package:mobile_front_end/utils/index.dart';
 
 class HistoryCard extends StatelessWidget {
   final Parking history;

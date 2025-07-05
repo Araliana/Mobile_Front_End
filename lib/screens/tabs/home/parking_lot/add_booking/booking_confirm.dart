@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tugas_front_end_nicolas/components/detail_component.dart';
-import 'package:tugas_front_end_nicolas/model/parking_lot.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/components/detail_component.dart';
+import 'package:mobile_front_end/model/parking_lot.dart';
+import 'package:mobile_front_end/utils/index.dart';
 
 class BookingConfirm extends StatefulWidget {
   const BookingConfirm({
