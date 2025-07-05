@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_front_end/screens/tabs/home/parking_lot/lot_detail.dart';
 import 'package:provider/provider.dart';
 import 'package:mobile_front_end/components/text_input.dart';
 import 'package:mobile_front_end/model/parking_lot.dart';

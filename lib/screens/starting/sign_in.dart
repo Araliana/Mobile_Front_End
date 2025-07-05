@@ -9,11 +9,9 @@ import 'package:mobile_front_end/provider/user_provider.dart';
 import 'package:mobile_front_end/screens/starting/forget_password.dart';
 import 'package:mobile_front_end/screens/main_layout.dart';
 import 'package:mobile_front_end/screens/starting/landing_screen.dart';
-import 'package:mobile_front_end/screens/starting/sign_up.dart';
 import 'package:mobile_front_end/utils/index.dart';
 import 'package:mobile_front_end/utils/snackbar.dart';
 import 'package:mobile_front_end/utils/useform.dart';
-import 'package:mobile_front_end/utils/validator.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({super.key});

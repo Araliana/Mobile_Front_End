@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_front_end/model/history.dart';
 import 'package:mobile_front_end/model/parking.dart';
-import 'package:mobile_front_end/screens/park&book/history_list.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_detail.dart';
+import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
 import 'package:mobile_front_end/utils/index.dart';
 
 class HistoryCard extends StatelessWidget {

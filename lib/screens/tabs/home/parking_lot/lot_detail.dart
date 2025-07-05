@@ -8,10 +8,10 @@ import 'package:mobile_front_end/provider/parking_lot_provider.dart';
 import 'package:mobile_front_end/screens/tabs/home/parking_lot/enter_qr.dart';
 import 'package:mobile_front_end/utils/index.dart';
 
-class SearchDetail extends StatelessWidget {
+class LotDetail extends StatelessWidget {
   final ParkingLot mall;
 
-  const SearchDetail({super.key, required this.mall});
+  const LotDetail({super.key, required this.mall});
 
   @override
   Widget build(BuildContext context) {
