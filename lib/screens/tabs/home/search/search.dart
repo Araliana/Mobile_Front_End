@@ -4,7 +4,6 @@ import 'package:mobile_front_end/components/text_input.dart';
 import 'package:mobile_front_end/model/parking_lot.dart';
 import 'package:mobile_front_end/model/user.dart';
 import 'package:mobile_front_end/provider/user_provider.dart';
-import 'package:mobile_front_end/screens/tabs/home/parking_lot/lot_detail.dart';
 import 'package:mobile_front_end/utils/index.dart';
 import 'package:mobile_front_end/provider/parking_lot_provider.dart';
 
