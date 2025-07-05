@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tugas_front_end_nicolas/components/button.dart';
-import 'package:tugas_front_end_nicolas/components/countdown.dart';
-import 'package:tugas_front_end_nicolas/components/pin_input.dart';
-import 'package:tugas_front_end_nicolas/provider/otp_provider.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
-import 'package:tugas_front_end_nicolas/utils/snackbar.dart';
+import 'package:mobile_front_end/components/button.dart';
+import 'package:mobile_front_end/components/countdown.dart';
+import 'package:mobile_front_end/components/pin_input.dart';
+import 'package:mobile_front_end/provider/otp_provider.dart';
+import 'package:mobile_front_end/utils/index.dart';
+import 'package:mobile_front_end/utils/snackbar.dart';
 
 class VerifyAccount extends StatefulWidget {
   const VerifyAccount({super.key, required this.onSubmit, this.successMessage});

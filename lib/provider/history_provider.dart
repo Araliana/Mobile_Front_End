@@ -4,16 +4,16 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:tugas_front_end_nicolas/model/booking.dart';
-import 'package:tugas_front_end_nicolas/model/history.dart';
-import 'package:tugas_front_end_nicolas/model/parking.dart';
-import 'package:tugas_front_end_nicolas/model/parking_lot.dart';
-import 'package:tugas_front_end_nicolas/model/user.dart';
-import 'package:tugas_front_end_nicolas/model/voucher.dart';
-import 'package:tugas_front_end_nicolas/provider/activity_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/parking_lot_provider.dart';
-import 'package:tugas_front_end_nicolas/provider/user_provider.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/model/booking.dart';
+import 'package:mobile_front_end/model/history.dart';
+import 'package:mobile_front_end/model/parking.dart';
+import 'package:mobile_front_end/model/parking_lot.dart';
+import 'package:mobile_front_end/model/user.dart';
+import 'package:mobile_front_end/model/voucher.dart';
+import 'package:mobile_front_end/provider/activity_provider.dart';
+import 'package:mobile_front_end/provider/parking_lot_provider.dart';
+import 'package:mobile_front_end/provider/user_provider.dart';
+import 'package:mobile_front_end/utils/index.dart';
 
 class HistoryProvider with ChangeNotifier {
   List<History> histories = [];

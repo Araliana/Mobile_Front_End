@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tugas_front_end_nicolas/components/button.dart';
-import 'package:tugas_front_end_nicolas/provider/user_provider.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/account/subscription/subscription_choice.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/account/subscription/subscription_feature.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/account/subscription/subscription_ongoing.dart';
-import 'package:tugas_front_end_nicolas/screens/tabs/account/subscription/subscription_splash.dart';
-import 'package:tugas_front_end_nicolas/utils/snackbar.dart';
-import 'package:tugas_front_end_nicolas/model/user.dart';
+import 'package:mobile_front_end/components/button.dart';
+import 'package:mobile_front_end/provider/user_provider.dart';
+import 'package:mobile_front_end/screens/tabs/account/subscription/subscription_choice.dart';
+import 'package:mobile_front_end/screens/tabs/account/subscription/subscription_feature.dart';
+import 'package:mobile_front_end/screens/tabs/account/subscription/subscription_ongoing.dart';
+import 'package:mobile_front_end/screens/tabs/account/subscription/subscription_splash.dart';
+import 'package:mobile_front_end/utils/snackbar.dart';
+import 'package:mobile_front_end/model/user.dart';
 
 class Subscription extends StatefulWidget {
   const Subscription({super.key});

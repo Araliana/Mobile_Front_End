@@ -1,8 +1,8 @@
-import 'package:tugas_front_end_nicolas/model/history.dart';
-import 'package:tugas_front_end_nicolas/model/parking_lot.dart';
-import 'package:tugas_front_end_nicolas/model/user.dart';
-import 'package:tugas_front_end_nicolas/model/voucher.dart';
-import 'package:tugas_front_end_nicolas/utils/index.dart';
+import 'package:mobile_front_end/model/history.dart';
+import 'package:mobile_front_end/model/parking_lot.dart';
+import 'package:mobile_front_end/model/user.dart';
+import 'package:mobile_front_end/model/voucher.dart';
+import 'package:mobile_front_end/utils/index.dart';
 
 class Parking {
   final String id;
