@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_front_end/screens/tabs/park&book/history_list.dart';
 import 'package:mobile_front_end/utils/index.dart';
 
 class ParkingHistory extends StatelessWidget {
